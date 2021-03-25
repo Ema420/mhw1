@@ -76,6 +76,11 @@ header {
 	border-right: 2px solid black;
 }
 
+#links a:hover {
+	color: white;
+	background-color: black;
+	border: 2px solid white;
+}
 footer {
 	display: flex;
 	justify-content: space-around;
