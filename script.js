@@ -107,9 +107,6 @@ function addFavorite(event){
 	}
 	fav.classList.remove('hidden1');
 	fav.classList.add('show');
-	
-	element.removeEventListener('click', addFavorite);
-	element.addEventListener('click', addFavorite);
 }
 
 function removeFavorite(event){
@@ -133,7 +130,6 @@ function removeFavorite(event){
 	if (i === checks.length) {
 		favArticle.removeAttribute('id');
 	}
-	
 }
 
 function showDetails(event){
@@ -162,11 +158,11 @@ function showDetails(event){
 			}
 		}
 	}
-	event.currentTarget.addEventListener('click', removeDetails);
+	event.currentTarget.addEventListener('click', hideDetails);
 	event.currentTarget.removeEventListener('click', showDetails);
 }
 
-function removeDetails(event){
+function hideDetails(event){
 	const boxDetail = event.currentTarget;
 	if (boxDetail.textContent === 'Nascondi Dettagli'){
 		boxDetail.textContent = 'Mostra Dettagli';
@@ -192,7 +188,7 @@ function removeDetails(event){
 		}
 	}
 	event.currentTarget.addEventListener('click', showDetails);
-	event.currentTarget.removeEventListener('click', removeDetails);
+	event.currentTarget.removeEventListener('click', hideDetails);
 }
 
 

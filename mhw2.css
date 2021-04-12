@@ -199,11 +199,12 @@ strong {
 
 footer {
 	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	border-top: 2px solid black;
-	padding: 50px;
-	color: gray;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 2px solid black;
+    padding: 50px;
+    color: white;
+    background-color: dimgray;
 }
  
  @media (max-width: 600px){
